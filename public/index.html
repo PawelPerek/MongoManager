@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>Status:
+            <span id="status">Nie połączono</span>
+        </span>
+        <label>Adres IP:
+            <input type="text" id="ip">
+            <input type="button" id="connect" value="Połącz">
+        </label>
+        <span>Current Root:
+            <span id="root"></span>
+        </span>
+    </header>
+    <main>
+        <section>
+            <div id="db-div">
+                <div id="db-header">
+                    <span>Bazy danych:</span>
+                    <button class="add" id="add-db">Dodaj nową bazę</button>
+                    <button class="del" id="del-db">Usun bazę</button>
+                </div>
+                <select id="db" multiple></select>
+            </div>
+            <div id="coll-div">
+                <div id="coll-header">
+                        <span>Kolekcje:</span>
+                        <button class="add" id="add-coll">Dodaj nową kolekcję</button>
+                        <button class="del" id="del-coll">Usun kolekcję</button>
+                </div>
+                <select id="coll" multiple></select>
+            </div>
+        </section>
+        <article>
+            <div id="doc-div">
+                <div id="doc-header">
+                    <span>Dokumenty:</span>
+                    <button class="add" id="add-doc">Dodaj nowy dokument</button>
+                </div>
+                <div id="docs"></div>
+            </div>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
